@@ -20,7 +20,9 @@
     "dev:css": "parcel watch public/scss/*.scss -d src --no-hmr --public-url ./",
     "build:css": "parcel build public/scss/*.scss -d src --public-url ./",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+	"cypress": "node_modules\\.bin\\cypress open",
+	"e2e": "node_modules\\.bin\\cypress run"
   },
   "eslintConfig": {
     "extends": [
