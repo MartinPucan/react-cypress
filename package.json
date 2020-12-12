@@ -16,6 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "dev:css": "parcel watch public/scss/*.scss --no-source-maps -d src --no-hmr --public-url ./",
+    "build:css": "parcel build public/scss/*.scss --no-source-maps -d src --public-url ./",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,6 +40,8 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^6.1.0"
+    "cypress": "^6.1.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.30.0"
   }
 }
