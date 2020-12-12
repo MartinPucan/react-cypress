@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "mime": "^2.4.4",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
@@ -16,8 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "dev:css": "parcel watch public/scss/*.scss --no-source-maps -d src --no-hmr --public-url ./",
-    "build:css": "parcel build public/scss/*.scss --no-source-maps -d src --public-url ./",
+    "dev:css": "parcel watch public/scss/*.scss -d src --no-hmr --public-url ./",
+    "build:css": "parcel build public/scss/*.scss -d src --public-url ./",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,7 +42,8 @@
   },
   "devDependencies": {
     "cypress": "^6.1.0",
-    "parcel-bundler": "^1.12.4",
+    "node-sass": "^5.0.0",
+    "parcel-bundler": "^1.3.1",
     "sass": "^1.30.0"
   }
 }

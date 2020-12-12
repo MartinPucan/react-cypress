@@ -1,7 +1,6 @@
 import React from "react";
 
 const NavBar = () => {
-
 	const name = 'React-Cypress';
 
 	return (
